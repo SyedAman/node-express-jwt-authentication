@@ -9,6 +9,6 @@ var app = express()
 var port = process.env.PORT || 8080
 
 // create server
-http.createServer(app).listen(port, () => {
+http.createServer(app).listen(port, (event) => {
   console.log('listening on http://localhost:' + port)
 })
