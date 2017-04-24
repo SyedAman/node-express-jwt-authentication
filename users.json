@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "syednashikaman",
+      "email": "syednashikaman@gmail.com",
+      "firstName": "Syed",
+      "lastName": "Aman"
+    },
+    {
+      "username": "bobthebuilder",
+      "email": "bobthebuilder@gmail.com",
+      "firstName": "Bob",
+      "lastName": "Builder"
+    },
+    {
+      "username": "joeschmo",
+      "email": "joeschmo@gmail.com",
+      "firstName": "Joe",
+      "lastName": "Schmo"
+    },
+    {
+      "username": "johnsmith",
+      "email": "johnsmith@gmail.com",
+      "firstName": "John",
+      "lastName": "Smith"
+    }
+  ]
+}
