@@ -22,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/SyedAman/nodejs-app-jwt-authentication/issues"
   },
-  "homepage": "https://github.com/SyedAman/nodejs-app-jwt-authentication#readme"
+  "homepage": "https://github.com/SyedAman/nodejs-app-jwt-authentication#readme",
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "compression": "^1.0.11",
+    "cors": "^2.4.1",
+    "dotenv": "^0.4.0",
+    "errorhandler": "^1.1.1",
+    "express": "^4.8.5",
+    "express-jwt": "^0.3.1",
+    "jsonwebtoken": "^5.0.1",
+    "lodash": "^2.4.1",
+    "morgan": "^1.2.3"
+  }
 }
