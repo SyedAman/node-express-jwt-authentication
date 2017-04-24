@@ -2,7 +2,7 @@
   "name": "nodejs-app-jwt-authentication",
   "version": "1.0.0",
   "description": "a nodejs app that uses JWT tokens for user authentication",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +15,11 @@
     "node.js",
     "authentication",
     "api",
-    "restful"
+    "restful",
+    "authO"
   ],
-  "author": "SyedAman",
-  "license": "ISC",
+  "author": "Syed Aman",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/SyedAman/nodejs-app-jwt-authentication/issues"
   },
