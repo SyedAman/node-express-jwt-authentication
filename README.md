@@ -2,7 +2,13 @@
 
 ## What
 
-A RESTful API build using Node.js, Express.js, and AuthO that uses JWT for authentication
+A RESTful API that authenticates users to protect endpoints with JSON Web Tokens
+
+### Stack
+
+- Node.js
+- Express.js
+- AuthO (express-jwt)
 
 ## How to run
 
@@ -21,3 +27,7 @@ $ npm install && npm start
 ### Create a user
 
 `POST /users/create-user`
+
+## Author
+
+Syed Aman
