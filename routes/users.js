@@ -1,10 +1,17 @@
 // define modular route for users
 
-var express = require('express')
-var router = express.Router()
+// import libraries
+const express = require('express')
+const router = express.Router()
+const jwt = require('express-jwt')
+const config = require('../database/config.json')
 
 // store user database
-var users = require('../database/users.json')
+const users = require('../database/users.json')
+
+const jwtTest = jwt({
+  secret: config.secret
+})
 
 // use route middleware
 router.use((request, response, next) => {
