@@ -2,7 +2,7 @@
 
 ## What
 
-A RESTful API that authenticates users to protect endpoints with JSON Web Tokens
+A RESTful API that protects endpoints using JSON Web Tokens
 
 ### Stack
 

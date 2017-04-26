@@ -5,9 +5,6 @@ const http = require('http')
 // use express
 const app = express()
 
-// import routes
-const getUsersRoute = require('./routes/users')
-
 // define port
 const port = process.env.PORT || 8080
 
@@ -17,4 +14,4 @@ http.createServer(app).listen(port, (event) => {
 })
 
 // use modular routes
-app.use('/users', getUsersRoute)
+app.use(require('./routes/users'))

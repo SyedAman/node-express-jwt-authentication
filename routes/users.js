@@ -15,15 +15,14 @@ const jwtTest = jwt({
 })
 
 // inject middleware
-router.use((request, response, next) => {
-  // log requests
+router.use('/users', jwtTest, (request, response, next) => {
   console.log(request.method, request.url)
 
   next()
 })
 
 // define protected GET route that returns a list of users
-router.get('/get-users', jwtTest, (request, response) => {
+router.get('/get-users', (request, response) => {
   response.status(200).send(users.users)
 })
 
@@ -34,6 +33,8 @@ router.post('/create-user', (request, response) => {
 
 // inject error handling middleware
 router.use((error, request, response, next) => {
+  console.log(request.method, request.url)
+
   if (error.name === 'UnauthorizedError') {
     response.status(401).send('invalid token')
   }
