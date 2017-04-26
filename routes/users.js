@@ -23,7 +23,7 @@ router.use((request, response, next) => {
 })
 
 // define GET route that returns a list of users
-router.get('/get-users', (request, response) => {
+router.get('/get-users', jwtTest, (request, response) => {
   response.status(200).send(users.users)
 })
 
