@@ -1,15 +1,15 @@
 // import modules
-var express = require('express')
-var http = require('http')
+const express = require('express')
+const http = require('http')
 
 // use express
-var app = express()
+const app = express()
 
 // import routes
-var getUsersRoute = require('./routes/users')
+const getUsersRoute = require('./routes/users')
 
 // define port
-var port = process.env.PORT || 8080
+const port = process.env.PORT || 8080
 
 // create server
 http.createServer(app).listen(port, (event) => {
