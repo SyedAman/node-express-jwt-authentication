@@ -15,18 +15,21 @@ const jwtTest = jwt({
 })
 
 // inject middleware
-router.use('/users', jwtTest, (request, response, next) => {
+router.use('/users', jwtTest.unless({
+  // protect all routes except these
+  path: ['/users/create-user']
+}), (request, response, next) => {
   console.log(request.method, request.url)
 
   next()
 })
 
-// define protected GET route that returns a list of users
+// define GET route that returns a list of users
 router.get('/get-users', (request, response) => {
   response.status(200).send(users.users)
 })
 
-// define unprotected POST route that creates a user
+// define POST route that creates a user
 router.post('/create-user', (request, response) => {
   response.status(200).send('successfully created a user')
 })
